@@ -17,19 +17,30 @@ import {
 export default class Main extends React.Component {
 
 
+
   render(){
+    let numPart = Array(30).fill(1);
+
+    const particles = numPart.map((i)=>{
+
+      return <div className="particle" key={Math.random()}/>
+    })
+
+
 
     return(
-      <Container className='p-3'>
+      <Container className='p-3' id="particle-container">
         {/* <Jumbotron>
           <h1 className='header'>Full-Stack Web Developer, Physicist, Photographer and Musician</h1>
 
 
         </Jumbotron> */}
+        {/* {particles} */}
+
         <Router>
           <Row>
             <Col >
-              <h1 className='header'>Full-Stack Web Developer, Physicist, Photographer and Musician</h1>
+              <h3 className='header'>Full-Stack Web Developer, Physicist, Photographer and Musician</h3>
             </Col>
 
 
@@ -67,6 +78,7 @@ export default class Main extends React.Component {
           </Switch>
         </Row>
       </Router>
+      
       </Container>
 
     )
