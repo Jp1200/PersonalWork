@@ -42,10 +42,10 @@ export default class Main extends React.Component {
                 <Breadcrumb.Item>Physics</Breadcrumb.Item>
               </Breadcrumb> */}
               <ButtonGroup aria-label="Links" size='lg'>
-                <Button variant="secondary"><Link to="/">Home</Link></Button>
-                <Button variant="secondary"><Link to="/projects">Projects</Link></Button>
-                <Button variant="secondary"><Link to='/photography'>Photography</Link></Button>
-                <Button variant="secondary"><Link to='/physics'>Physics</Link></Button>
+                <Button variant="outline-dark"><Link to="/">Home</Link></Button>
+                <Button variant="outline-dark"><Link to="/projects">Projects</Link></Button>
+                <Button variant="outline-dark"><Link to='/photography'>Photography</Link></Button>
+                <Button variant="outline-dark"><Link to='/physics'>Physics</Link></Button>
               </ButtonGroup>
             </Col>
 
@@ -54,14 +54,14 @@ export default class Main extends React.Component {
         <Row>
           <Switch>
             {/* Imports for different subjects */}
-            <Route path='projects'>
+            <Route path='/projects'>
 
             </Route>
             <Route path='/photography'>
 
             </Route>
             <Route path='/physics'>
-              
+
             </Route>
 
           </Switch>
