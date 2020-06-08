@@ -25,11 +25,7 @@
 // 		background: hsl(192, 70%, 50%);
 // 	}
 // }
-.header{
-  color: #FFFFFF;
 
-
-}
 
 $color-bg: #1e1e1e;
 $color-particle: #fff;
@@ -64,6 +60,7 @@ body {
   align-items: center;
   font-size: 4rem;
   overflow: hidden;
+  font-family: Courier;
 }
 
 .page-bg, .animation-wrapper {
@@ -168,6 +165,14 @@ body {
   // -moz-animation: neon1 3.0s ease-in-out infinite alternate;
   // animation: neon1 3.0s ease-in-out infinite alternate;
 }
+.header{
+  color: #FFFFFF;
+
+
+}
+.icons {
+  margin: 3px
+}
 .link {
   color: #ffffff;
 }
@@ -183,7 +188,7 @@ body {
 }
 .photo-box {
   margin: 10px auto;
-  
+
 }
 // h4:hover {
 //   color: #FF1177;

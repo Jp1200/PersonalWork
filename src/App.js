@@ -1,10 +1,8 @@
 import React from 'react';
 import Main from './Mainpage.js';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import ReactDOM from "react-dom";
 import {
-  BrowserRouter as Router,
-  Route
+  BrowserRouter as Router
 } from "react-router-dom";
 import './App.scss';
 function App() {

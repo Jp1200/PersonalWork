@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 import Media from 'react-bootstrap/Media';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
-
+import { SocialIcon } from 'react-social-icons';
 
 import Projects from './Projects.js'
 
@@ -61,7 +61,12 @@ export default class Main extends React.Component {
 
           <Row>
             <Col >
-              <h3 className='header'>Jack Parker</h3>
+              <h3 className='header'>Jack Parker
+                <SocialIcon className='icons' url="https://www.instagram.com/jack_p1996/"/>
+                <SocialIcon className='icons' url="https://github.com/Jp1200"/>
+                <SocialIcon className='icons' url="https://www.linkedin.com/in/jack-parker-473523183/"/>
+
+              </h3>
               <h3 className='page-wrapper'>Full-Stack Web Developer, Physicist, Photographer and Musician</h3>
             </Col>
 
