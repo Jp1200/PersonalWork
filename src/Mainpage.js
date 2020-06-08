@@ -5,8 +5,10 @@ import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
-
+import Col from 'react-bootstrap/Col';
+import Media from 'react-bootstrap/Media';
+import Image from 'react-bootstrap/Image';
+import Modal from 'react-bootstrap/Modal';
 // import { Router, Route, Switch } from "react-router";
 import {
   BrowserRouter as Router,
@@ -17,7 +19,22 @@ import {
 export default class Main extends React.Component {
 
 
+  constructor(){
+    super()
+    this.state = {
+      show: false
+    }
+  }
 
+
+  handleClose = () => {
+    this.setState({show:false});
+  }
+  // const handleShow = () => setShow(true);
+  handleShow = () =>{
+     this.setState({show:true});
+
+  }
   render(){
     let numPart = Array(30).fill(1);
 
@@ -40,7 +57,8 @@ export default class Main extends React.Component {
         <Router>
           <Row>
             <Col >
-              <h3 className='header'>Full-Stack Web Developer, Physicist, Photographer and Musician</h3>
+              <h3 className='header'>Jack Parker</h3>
+              <h3 className='page-wrapper'>Full-Stack Web Developer, Physicist, Photographer and Musician</h3>
             </Col>
 
 
@@ -53,18 +71,48 @@ export default class Main extends React.Component {
                 <Breadcrumb.Item>Physics</Breadcrumb.Item>
               </Breadcrumb> */}
               <ButtonGroup aria-label="Links" size='lg'>
-                <Button variant="outline-dark"><Link to="/">Home</Link></Button>
-                <Button variant="outline-dark"><Link to="/projects">Projects</Link></Button>
-                <Button variant="outline-dark"><Link to='/photography'>Photography</Link></Button>
-                <Button variant="outline-dark"><Link to='/physics'>Physics</Link></Button>
+                <Button className="button-header" variant="outline-light"><Link className="link" to="/">Home</Link></Button>
+                <Button className="button-header"  variant="outline-light"><Link className="link" to="/projects">Projects</Link></Button>
+                <Button className="button-header"  variant="outline-light"><Link className="link" to='/photography'>Photography</Link></Button>
+                <Button className="button-header"  variant="outline-light"><Link className="link" to='/physics'>Physics</Link></Button>
               </ButtonGroup>
             </Col>
 
           </Row>
+          <Container>
+            <Row align='center'>
+              <Media>
+                <Image
+                  onClick={this.handleShow}
+                  src={require('./resume.png')}
 
+                  width={168}
+                  height={215}
+                  />
+                <Media.Body>
+                  <h5 className='media'>
+                    Resumé
+                  </h5>
+
+
+                </Media.Body>
+
+
+
+              </Media>
+            </Row>
+          </Container>
+          <Modal show={this.state.show} onHide={this.handleClose}>
+
+            <Image width={814} height={1045} src={require('./resume.png')}/>
+
+          </Modal>
         <Row>
           <Switch>
             {/* Imports for different subjects */}
+            {/* <Route path='/'>
+
+            </Route> */}
             <Route path='/projects'>
 
             </Route>
@@ -78,7 +126,7 @@ export default class Main extends React.Component {
           </Switch>
         </Row>
       </Router>
-      
+
       </Container>
 
     )
