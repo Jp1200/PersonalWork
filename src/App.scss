@@ -173,7 +173,17 @@ body {
 }
 .media{
   color: #ffffff;
-  text-align: right;
+  margin:auto;
+}
+.photo-container{
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 15px;
+
+}
+.photo-box {
+  margin: 10px auto;
+  
 }
 // h4:hover {
 //   color: #FF1177;

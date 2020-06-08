@@ -1,9 +1,15 @@
 import React from 'react';
 import Main from './Mainpage.js';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactDOM from "react-dom";
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 import './App.scss';
 function App() {
   return (
+    <Router>
     <div className='page-bg'>
       <div className='animation-wrapper'>
         <div className="particle particle-1"></div>
@@ -13,6 +19,7 @@ function App() {
         <Main/>
       </div>
     </div>
+    </Router>
   );
 }
 

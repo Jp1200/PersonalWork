@@ -9,6 +9,10 @@ import Col from 'react-bootstrap/Col';
 import Media from 'react-bootstrap/Media';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
+
+
+import Projects from './Projects.js'
+
 // import { Router, Route, Switch } from "react-router";
 import {
   BrowserRouter as Router,
@@ -54,7 +58,7 @@ export default class Main extends React.Component {
         </Jumbotron> */}
         {/* {particles} */}
 
-        <Router>
+
           <Row>
             <Col >
               <h3 className='header'>Jack Parker</h3>
@@ -79,53 +83,53 @@ export default class Main extends React.Component {
             </Col>
 
           </Row>
-          <Container>
-            <Row align='center'>
-              <Media>
-                <Image
-                  onClick={this.handleShow}
-                  src={require('./resume.png')}
 
-                  width={168}
-                  height={215}
-                  />
-                <Media.Body>
-                  <h5 className='media'>
-                    Resumé
-                  </h5>
-
-
-                </Media.Body>
-
-
-
-              </Media>
-            </Row>
-          </Container>
           <Modal show={this.state.show} onHide={this.handleClose}>
 
-            <Image width={814} height={1045} src={require('./resume.png')}/>
+            <Image width={615} height={800} src={require('./resume.png')}/>
 
           </Modal>
         <Row>
           <Switch>
             {/* Imports for different subjects */}
-            {/* <Route path='/'>
+            <Route exact path='/'>
 
-            </Route> */}
-            <Route path='/projects'>
+
+
+              <Container fluid>
+
+                <Row>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+
+                  <br/>
+                  <Media>
+                    <Image
+                      onClick={this.handleShow}
+                      src={require('./resume.png')}
+
+                      width={168}
+                      height={215}
+                      />
+                  </Media>
+                </Row>
+              </Container>
+            </Route>
+            <Route exact path='/projects'>
+              <Projects/>
+            </Route>
+            <Route exact path='/photography'>
 
             </Route>
-            <Route path='/photography'>
-
-            </Route>
-            <Route path='/physics'>
+            <Route exact path='/physics'>
 
             </Route>
 
           </Switch>
         </Row>
-      </Router>
+
 
       </Container>
 
