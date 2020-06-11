@@ -2,8 +2,8 @@ import React from 'react';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'
+
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Media from 'react-bootstrap/Media';
@@ -11,11 +11,13 @@ import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
 import { SocialIcon } from 'react-social-icons';
 
-import Projects from './Projects.js'
 
+// File imports ######
+import Projects from './Projects.js';
+import Photography from './Photography.js';
 // import { Router, Route, Switch } from "react-router";
 import {
-  BrowserRouter as Router,
+
   Switch,
   Route,
   Link
@@ -40,12 +42,7 @@ export default class Main extends React.Component {
 
   }
   render(){
-    let numPart = Array(30).fill(1);
 
-    const particles = numPart.map((i)=>{
-
-      return <div className="particle" key={Math.random()}/>
-    })
 
 
 
@@ -65,7 +62,7 @@ export default class Main extends React.Component {
                 <SocialIcon className='icons' url="https://www.instagram.com/jack_p1996/"/>
                 <SocialIcon className='icons' url="https://github.com/Jp1200"/>
                 <SocialIcon className='icons' url="https://www.linkedin.com/in/jack-parker-473523183/"/>
-
+                <SocialIcon className='icons' url="https://neighborhood-farmer-market.herokuapp.com/"/>
               </h3>
               <h3 className='page-wrapper'>Full-Stack Web Developer, Physicist, Photographer and Musician</h3>
             </Col>
@@ -91,7 +88,7 @@ export default class Main extends React.Component {
 
           <Modal show={this.state.show} onHide={this.handleClose}>
 
-            <Image width={615} height={800} src={require('./resume.png')}/>
+            <Image  width={805} height={1025} src={require('./resume.png')}/>
 
           </Modal>
         <Row>
@@ -102,21 +99,25 @@ export default class Main extends React.Component {
 
 
               <Container fluid>
-
+                <br/>
+                <h2 align='center' className='resume-modal'>Resumé</h2>
                 <Row>
-                  <br/>
+
+
                   <br/>
                   <br/>
                   <br/>
 
                   <br/>
-                  <Media>
+                  <Media
+                    className='media'>
                     <Image
+
                       onClick={this.handleShow}
                       src={require('./resume.png')}
 
-                      width={168}
-                      height={215}
+                      width={805/4}
+                      height={1025/4}
                       />
                   </Media>
                 </Row>
@@ -127,6 +128,7 @@ export default class Main extends React.Component {
             </Route>
             <Route exact path='/photography'>
 
+              <Photography/>
             </Route>
             <Route exact path='/physics'>
 
