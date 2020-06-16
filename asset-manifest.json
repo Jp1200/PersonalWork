@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PersonalWork/static/css/main.b0c097e1.chunk.css",
+    "main.css": "/PersonalWork/static/css/main.0b4fa64c.chunk.css",
     "main.js": "/PersonalWork/static/js/main.be4b827e.chunk.js",
     "main.js.map": "/PersonalWork/static/js/main.be4b827e.chunk.js.map",
     "runtime-main.js": "/PersonalWork/static/js/runtime-main.812dab8a.js",
@@ -8,9 +8,9 @@
     "static/js/2.7ff13f33.chunk.js": "/PersonalWork/static/js/2.7ff13f33.chunk.js",
     "static/js/2.7ff13f33.chunk.js.map": "/PersonalWork/static/js/2.7ff13f33.chunk.js.map",
     "index.html": "/PersonalWork/index.html",
-    "precache-manifest.687120691e473ecbb0a562857ea92685.js": "/PersonalWork/precache-manifest.687120691e473ecbb0a562857ea92685.js",
+    "precache-manifest.cf32b79fb69f9f625a258b44945760d8.js": "/PersonalWork/precache-manifest.cf32b79fb69f9f625a258b44945760d8.js",
     "service-worker.js": "/PersonalWork/service-worker.js",
-    "static/css/main.b0c097e1.chunk.css.map": "/PersonalWork/static/css/main.b0c097e1.chunk.css.map",
+    "static/css/main.0b4fa64c.chunk.css.map": "/PersonalWork/static/css/main.0b4fa64c.chunk.css.map",
     "static/js/2.7ff13f33.chunk.js.LICENSE.txt": "/PersonalWork/static/js/2.7ff13f33.chunk.js.LICENSE.txt",
     "static/media/IG420.jpg": "/PersonalWork/static/media/IG420.abcc762c.jpg",
     "static/media/IG421.jpg": "/PersonalWork/static/media/IG421.fefc0611.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.812dab8a.js",
     "static/js/2.7ff13f33.chunk.js",
-    "static/css/main.b0c097e1.chunk.css",
+    "static/css/main.0b4fa64c.chunk.css",
     "static/js/main.be4b827e.chunk.js"
   ]
 }
