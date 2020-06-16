@@ -1,14 +1,11 @@
 import React from 'react';
 import Main from './Mainpage.js';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
 
 import './App.scss';
 function App() {
   return (
-    <Router>
+    <>
       <Main/>
       <div className='page-bg'>
         <div className='animation-wrapper'>
@@ -19,7 +16,7 @@ function App() {
 
       </div>
     </div>
-    </Router>
+    </>
   );
 }
 
