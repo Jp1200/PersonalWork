@@ -2,10 +2,10 @@ import React from 'react';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
+
 import Media from 'react-bootstrap/Media';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
@@ -15,6 +15,7 @@ import { SocialIcon } from 'react-social-icons';
 // File imports ######
 import Projects from './Projects.js';
 import Photography from './Photography.js';
+import Physics from './Physics.js';
 // import { Router, Route, Switch } from "react-router";
 import {
 
@@ -131,7 +132,7 @@ export default class Main extends React.Component {
               <Photography/>
             </Route>
             <Route exact path='/physics'>
-
+              <Physics/>
             </Route>
 
           </Switch>
