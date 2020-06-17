@@ -7,7 +7,15 @@ import Col from 'react-bootstrap/Col';
 function Physics()  {
   return(
     <Container className='physics'>
-      <Row align='center'>
+      <Row className='physics-heading'>
+
+          <h5>Fourier series</h5>
+
+      </Row>
+      <Row className='row'>
+
+      </Row>
+      <Row >
         <Fourier/>
 
       </Row>

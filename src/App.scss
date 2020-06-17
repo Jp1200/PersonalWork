@@ -29,7 +29,7 @@ html, body {
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   font-size: 4rem;
 
   font-family: Courier;
@@ -191,6 +191,20 @@ body {
   width: auto;
   height: auto;
 }
+.physics{
+
+  margin: 40px;
+}
+.physics-heading{
+
+  text-align: center;
+
+
+  font-family: monospace;
+  color: #FFFFFF;
+
+}
+
 // h4:hover {
 //   color: #FF1177;
 //   -webkit-animation: none;
