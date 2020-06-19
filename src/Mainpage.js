@@ -29,7 +29,9 @@ export default class Main extends React.Component {
   constructor(){
     super()
     this.state = {
-      show: false
+      show: false,
+      width: window.innerWidth
+
     }
   }
 
@@ -48,7 +50,7 @@ export default class Main extends React.Component {
 
 
     return(
-      <Container className='p-3' id="particle-container">
+      <Container fluid className='mainpage'>
         {/* <Jumbotron>
           <h1 className='header'>Full-Stack Web Developer, Physicist, Photographer and Musician</h1>
 
@@ -57,20 +59,20 @@ export default class Main extends React.Component {
         {/* {particles} */}
 
 
-          <Row>
-            <Col >
-              <h3 className='header'>Jack Parker
+          <Row className='row'>
+            <Col className="col-xs-6">
+              <h3 className='header text-center'>Jack Parker
                 <SocialIcon className='icons' url="https://www.instagram.com/jack_p1996/"/>
                 <SocialIcon className='icons' url="https://github.com/Jp1200"/>
                 <SocialIcon className='icons' url="https://www.linkedin.com/in/jack-parker-473523183/"/>
                 <SocialIcon className='icons' url="https://neighborhood-farmer-market.herokuapp.com/"/>
               </h3>
-              <h3 className='page-wrapper'>Full-Stack Web Developer, Physicist, Photographer and Musician</h3>
+
             </Col>
 
 
 
-            <Col align='end'>
+            <Col className='col-xs-6 '>
               {/* <Breadcrumb>
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>Projects</Breadcrumb.Item>
@@ -86,12 +88,16 @@ export default class Main extends React.Component {
             </Col>
 
           </Row>
-
-          <Modal show={this.state.show} onHide={this.handleClose}>
+          <h3 align='center' className='page-wrapper'>Full-Stack Web Developer, Physicist, Photographer and Musician</h3>
+          <Modal
+            size='lg'
+            aria-labelledby='contained-modal-title-vcenter'
+            show={this.state.show} onHide={this.handleClose} >
 
             <Image  width={805} height={1025} src={require('./resume.png')}/>
 
           </Modal>
+
         <Row>
           <Switch>
             {/* Imports for different subjects */}
@@ -99,10 +105,10 @@ export default class Main extends React.Component {
 
 
 
-              <Container fluid>
+              <Container>
                 <br/>
                 <h2 align='center' className='resume-modal'>Resumé</h2>
-                <Row>
+                <Row className='row'>
 
 
                   <br/>
@@ -121,6 +127,19 @@ export default class Main extends React.Component {
                       height={1025/4}
                       />
                   </Media>
+                </Row>
+                <Row>
+                  <Col>
+                  <h1 className='about-h1'>About me ---></h1>
+                  <p className='about'>
+                    Trinity University graduate student with a background in physics and mathematics. I currently live in Austin, Texas and am in the process of a job search.
+                    I have many hobbies which include photography, playing piano/guitar and playing video games. I love learning and pursing knowledge I find interesting.
+                    This website was designed
+                    to look empty and barren as I wish to add more and more to it over time. The sky might be the limit, however, space is limitless.
+                    Using ReactJS and BootStrap-ReactJS and implementing SCSS to create the background. Mobile view is atrocious, currently
+                    working on improving it.
+                  </p>
+                  </Col>
                 </Row>
               </Container>
             </Route>

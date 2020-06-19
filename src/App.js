@@ -6,8 +6,9 @@ import './App.scss';
 function App() {
   return (
     <>
-      <Main/>
+    <Main/>
       <div className='page-bg'>
+
         <div className='animation-wrapper'>
           <div className="particle particle-1"></div>
           <div className="particle particle-2"></div>
