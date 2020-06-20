@@ -1,5 +1,6 @@
 import React from 'react';
 import P5Wrapper from 'react-p5-wrapper';
+import Button from 'react-bootstrap/Button';
 // import sketch from './Resource/FourierSketch.js'
 
 export default class Fourier extends React.Component {
@@ -14,12 +15,20 @@ export default class Fourier extends React.Component {
   }
   // let time = 0;
 
+   changeDegree = (event) => {
+    this.setState({
+      degree: parseInt(event.target.id)
+    })
+
+  };
 
    sketch = (p) => {
      let wave = [];
      let time = 0;
+     let deg = this.state.degree
     p.setup = function() {
       p.createCanvas(1200,400);
+
       // let input = p.createInput();
       // input.position(200,350);
       // let button = p.createButton('Run');
@@ -28,10 +37,7 @@ export default class Fourier extends React.Component {
 
 
 
-      // function changeDegree(){
-      //   degree = input.value();
-      //   input.value('');
-      // }
+
     };
 
     p.draw = function(){
@@ -48,7 +54,7 @@ export default class Fourier extends React.Component {
       let val = 3
       let x = 0;
       let y = 0;
-      for (let i = 0; i < val; i++) {
+      for (let i = 0; i < deg; i++) {
         let prevx = x;
         let prevy = y;
         let n = i * 2 + 1;
@@ -89,9 +95,15 @@ export default class Fourier extends React.Component {
   }
   render(){
     return(
-      <P5Wrapper sketch={this.sketch}>
+      <>
+        <Button id='2' onClick={this.changeDegree}>2</Button>
+        <Button id='3' onClick={this.changeDegree}>3</Button>
+        <Button id='4' onClick={this.changeDegree}>4</Button>
+        <Button id='5' onClick={this.changeDegree}>5</Button>
+        <P5Wrapper align='center' sketch={this.sketch}>
 
-      </P5Wrapper>
+        </P5Wrapper>
+      </>
     )
   }
 }
