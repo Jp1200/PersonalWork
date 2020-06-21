@@ -10,6 +10,11 @@ function Physics()  {
       <Row className='physics-heading'>
         <Col>
           <h5>Fourier series</h5>
+          <h5>
+            <Latex >
+              $(3\times 4) \div (5-3)$
+            </Latex>
+          </h5>
         </Col>
         <Col>
           <p className='about'>
