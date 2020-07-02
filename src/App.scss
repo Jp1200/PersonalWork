@@ -1,4 +1,3 @@
-
 $color-bg: #1e1e1e;
 $color-particle: #fff;
 $spacing: 2560px;
@@ -11,7 +10,7 @@ $time-4: 200s;
 @function particles($max) {
   $val: 0px 0px $color-particle;
   @for $i from 1 through $max {
-    $val: #{$val}, random($spacing)+px random($spacing)+px $color-particle;
+    $val: #{$val}, random($spacing) + px random($spacing) + px $color-particle;
   }
   @return $val;
 }
@@ -22,21 +21,22 @@ $time-4: 200s;
 }
 
 /* Styles */
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   // display: flex;
 
-
   font-size: 4rem;
 
   font-family: Courier;
 }
 
-.page-bg, .animation-wrapper {
-  position:fixed;
+.page-bg,
+.animation-wrapper {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -50,10 +50,10 @@ body {
   background-blend-mode: screen;
   background-size: cover;
   // filter: grayscale(100%);
-
 }
 
-.particle, .particle:after {
+.particle,
+.particle:after {
   background: transparent;
 }
 
@@ -119,16 +119,14 @@ body {
 }
 
 .page-wrapper {
-
   color: #fff;
-
 }
-.about-h1{
-  color: #FFFFFF;
+.about-h1 {
+  color: #ffffff;
   align-self: flex-start;
 }
-.about{
-  color: #FFFFFF;
+.about {
+  color: #ffffff;
   font-size: 12pt;
   text-indent: 48px;
 }
@@ -139,24 +137,22 @@ body {
 //   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
 //   animation: neon1 1.5s ease-in-out infinite alternate;
 // }
-.mainpage{
+.mainpage {
   justify-content: center;
   overflow: auto;
 }
-.p-3{
+.p-3 {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 100%;
-
-
 }
 body::-webkit-scrollbar {
   display: none;
 }
-.button-header{
+.button-header {
   color: #fff;
 
   // font-family: Monoton;
@@ -164,40 +160,37 @@ body::-webkit-scrollbar {
   // -moz-animation: neon1 3.0s ease-in-out infinite alternate;
   // animation: neon1 3.0s ease-in-out infinite alternate;
 }
-.header{
-  color: #FFFFFF;
+.header {
+  color: #ffffff;
   font-family: cursive;
   font-size: 40px;
   padding-top: 25px;
 }
-.resume-modal{
-  color: #FFFFFF;
-
+.resume-modal {
+  color: #ffffff;
 }
-.math{
-
+.math {
 }
 .icons {
-  margin: 3px
+  margin: 3px;
 }
 .link {
   color: #ffffff;
 }
-.media{
+.media {
   color: #ffffff;
-  margin:auto;
+  margin: auto;
 }
-.media:hover{
+.media:hover {
   cursor: pointer;
 }
-.photo-container{
+.photo-container {
   background: transparent;
   color: #000000;
   padding: 2px;
-
 }
-.card-desc{
-  color: #FFFFFF;
+.card-desc {
+  color: #ffffff;
   font-family: Courier;
   font-size: 14px;
   text-align: center;
@@ -207,23 +200,19 @@ body::-webkit-scrollbar {
   width: auto;
   height: auto;
 }
-.physics{
-
+.physics {
   margin: 40px;
+  justify-content: center;
 }
-.physics-heading{
-
+.physics-heading {
   text-align: center;
-
-
+  align-items: center;
   font-family: monospace;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
-.physics-text{
+.physics-text {
   font-size: 12pt;
-  color: #FFFFFF;
-  
+  color: #ffffff;
 }
 
 // h4:hover {
@@ -237,24 +226,12 @@ body::-webkit-scrollbar {
 
 @-webkit-keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 30px #fff,
-      0 0 40px #FF1177,
-      0 0 70px #FF1177,
-      0 0 80px #FF1177,
-      0 0 100px #FF1177,
-      0 0 150px #FF1177;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
   }
   to {
-    text-shadow: 0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #fff,
-      0 0 20px #FF1177,
-      0 0 35px #FF1177,
-      0 0 40px #FF1177,
-      0 0 50px #FF1177,
-      0 0 75px #FF1177;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
   }
 }
 
@@ -262,24 +239,12 @@ body::-webkit-scrollbar {
 
 @-moz-keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 30px #fff,
-      0 0 40px #FF1177,
-      0 0 70px #FF1177,
-      0 0 80px #FF1177,
-      0 0 100px #FF1177,
-      0 0 150px #FF1177;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
   }
   to {
-    text-shadow: 0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #fff,
-      0 0 20px #FF1177,
-      0 0 35px #FF1177,
-      0 0 40px #FF1177,
-      0 0 50px #FF1177,
-      0 0 75px #FF1177;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
   }
 }
 
@@ -287,28 +252,14 @@ body::-webkit-scrollbar {
 
 @keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 30px #fff,
-      0 0 40px #FF1177,
-      0 0 70px #FF1177,
-      0 0 80px #FF1177,
-      0 0 100px #FF1177,
-      0 0 150px #FF1177;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
   }
   to {
-    text-shadow: 0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #fff,
-      0 0 20px #FF1177,
-      0 0 35px #FF1177,
-      0 0 40px #FF1177,
-      0 0 50px #FF1177,
-      0 0 75px #FF1177;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
   }
 }
-
-
 
 /* .App {
   text-align: center;
