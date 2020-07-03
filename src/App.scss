@@ -131,10 +131,14 @@ body {
   text-indent: 48px;
 }
 .imageX {
+  margin-bottom: 30px;
+  margin-top: 30px;
   transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 5px 10px #000000;
 }
 .imageX:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
+  background-color: white;
 }
 // h4 {
 //   color: #fff;

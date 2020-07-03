@@ -17,11 +17,16 @@ export default class Projects extends React.Component {
         <h1 className="physics-heading" align="center">
           Projects I've worked on:
         </h1>
-        <br></br>
+        <p className="about">
+          I've recently undergone working collaboritvely on open source projects
+          like <a href="">CoronaTracker</a>
+        </p>
+
         <Row align="center">
           <Col className="col-xs-6">
             <a href="https://neighborhood-farmer-market.herokuapp.com/">
               <Image
+                align="center"
                 className="imageX"
                 src={require("./Resource/HomeGrown.png")}
                 thumbnail
@@ -31,10 +36,10 @@ export default class Projects extends React.Component {
             <p className="about">
               HomeGrown Foods, App for neighbors to trade produce
             </p>
-          </Col>
-          <Col className="col-xs-6">
+
             <a href="https://github.com/Jp1200/kareoji">
               <Image
+                align="center"
                 className="imageX"
                 src={require("./Resource/kareoji.png")}
                 thumbnail
@@ -44,12 +49,7 @@ export default class Projects extends React.Component {
             <p className="about">Kareoji, karaoke but with emojis</p>
           </Col>
         </Row>
-        <Row align="center">
-          <p className="about">
-            I've recently undergone working collaboritvely on open source
-            projects like <a href="">CoronaTracker</a>
-          </p>
-        </Row>
+        <Row align="center"></Row>
       </Container>
     );
   }
