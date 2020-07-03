@@ -55,6 +55,13 @@ function Physics() {
           <Fourier />
         </Col>
       </Row>
+      <Row align="center">
+        <Col>
+          <p className="physics-text">
+            (fig 1.a) Animation inspired from Wikipedia on Fourier Series.
+          </p>
+        </Col>
+      </Row>
     </Container>
   );
 }

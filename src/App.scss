@@ -130,6 +130,12 @@ body {
   font-size: 12pt;
   text-indent: 48px;
 }
+.imageX {
+  transition: all 0.2s ease-in-out;
+}
+.imageX:hover {
+  transform: scale(1.1);
+}
 // h4 {
 //   color: #fff;
 //   font-family: Monoton;
