@@ -33,16 +33,22 @@ export default class Projects extends React.Component {
             </p>
           </Col>
           <Col className="col-xs-6">
-            <a href="https://neighborhood-farmer-market.herokuapp.com/">
+            <a href="https://github.com/Jp1200/kareoji">
               <Image
                 className="imageX"
-                src={require("./Resource/HomeGrown.png")}
+                src={require("./Resource/kareoji.png")}
                 thumbnail
               ></Image>
             </a>
 
             <p className="about">Kareoji, karaoke but with emojis</p>
           </Col>
+        </Row>
+        <Row align="center">
+          <p className="about">
+            I've recently undergone working collaboritvely on open source
+            projects like <a href="">CoronaTracker</a>
+          </p>
         </Row>
       </Container>
     );
