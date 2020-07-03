@@ -16,7 +16,7 @@ function Physics() {
   return (
     <Container>
       <Row align="center" className="physics-heading">
-        <Col>
+        <Col className="col-md-6">
           <h5>Fourier series</h5>
           <h5 className="math">
             <MathJax.Provider>
@@ -32,7 +32,7 @@ function Physics() {
             function that is integrable on length P.
           </p>
         </Col>
-        <Col>
+        <Col className="col-md-6">
           <MathJax.Provider>
             <p className="physics-text">
               Periodic functions derived from the summation of sinusoidal
@@ -61,6 +61,34 @@ function Physics() {
             (fig 1.a) Animation inspired from Wikipedia on Fourier Series.
           </p>
         </Col>
+      </Row>
+      <Row align="center">
+        <h1 className="physics-heading">
+          Perturbation Theory and Applications
+        </h1>
+        <Col className="col-md-6">
+          <p className="physics-text">
+            Perturbation theory was first introduced to me in Quantum mechanics
+            as an idea stemming from a way to solve solutions to difficult
+            problems regarding particle scattering. However, after watching a
+            few lectures on a class called
+            <br />
+            <a href="https://www.youtube.com/watch?v=_Sm7SNlNUOI">
+              Mathematical Physics
+            </a>{" "}
+            &nbsp; taught by Carl Bender at Washington University, I've begun to
+            truly appreciate the beauty and mutli-use applications Perturbation
+            theory brings to the table.
+          </p>
+
+          <p className="physics-text">
+            Perturbation theory TD;LR is that a difficult problem is comprised
+            of many, or in general, infinite tiny problems that are trivially
+            easy to solve. In mathematical terms we, assume a problem there
+            exists a tiny 'perturbation', ε (epsilon).
+          </p>
+        </Col>
+        <Col className="col-md-6"></Col>
       </Row>
     </Container>
   );
