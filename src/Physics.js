@@ -13,6 +13,7 @@ function Physics() {
   const c = "\\frac{\\sin(n \\theta)}{n \\pi}";
   const series =
     "s_N(x) = \\frac{a_O}{2} + \\sum_{n=1}^{N}(a_n\\cos(2\\pi x \\frac{n}{P}) + b_n\\sin(2\\pi x \\frac{n}{P}))";
+  const perturbation = "";
   return (
     <Container>
       <Row align="center" className="physics-heading">
@@ -84,9 +85,12 @@ function Physics() {
           <p className="physics-text">
             Perturbation theory TD;LR is that a difficult problem is comprised
             of many, or in general, infinite tiny problems that are trivially
-            easy to solve. In mathematical terms we, assume a problem there
-            exists a tiny 'perturbation', ε (epsilon).
+            easy to solve. In mathematical terms, we assume for any problem
+            there exists a tiny 'perturbation', ε (epsilon).
           </p>
+          <MathJax.Provider>
+            <MathJax.Node formula={}></MathJax.Node>
+          </MathJax.Provider>
         </Col>
         <Col className="col-md-6"></Col>
       </Row>
