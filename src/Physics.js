@@ -34,19 +34,21 @@ function Physics() {
           </p>
         </Col>
         <Col className="col-md-6">
+          <p className="physics-text">
+            Periodic functions derived from the summation of sinusoidal
+            functions or complex exponential functions. This has many
+            applications in physics and engineering. This is a simple annimation
+            of the convergence of the Fourier series. Clicking on any of the
+            buttons will change the degree of n as represented by this equation.
+            The higher the degree the closer the function will represent a
+            square function i.e. as N => ∞.{" "}
+          </p>
           <MathJax.Provider>
-            <p className="physics-text">
-              Periodic functions derived from the summation of sinusoidal
-              functions or complex exponential functions. This has many
-              applications in physics and engineering. This is a simple
-              annimation of the convergence of the Fourier series. Clicking on
-              any of the buttons will change the degree of n as represented by
-              this equation. The higher the degree the closer the function will
-              represent a square function i.e. as N => ∞.{" "}
-              <MathJax.Node formula={c} /> Finding the coeffcients is trivial
-              for most s(x).
-              <MathJax.Node formula={series} />
-            </p>
+            <MathJax.Node formula={c} className="physics-text">
+              {" "}
+              Finding the coeffcients is trivial for most s(x).
+            </MathJax.Node>
+            <MathJax.Node formula={series} className="physics-text" />
           </MathJax.Provider>
         </Col>
       </Row>
@@ -78,7 +80,7 @@ function Physics() {
           </p>
         </Col>
         <Col className="col-md-6">
-          <Image src={require("./Resource/wave.gif")} />
+          <Image src={require("./Resource/wave.gif")} thumbnail />
         </Col>
       </Row>
       <Row align="center">
