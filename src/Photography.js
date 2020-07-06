@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import Image from 'react-bootstrap/Image';

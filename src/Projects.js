@@ -1,13 +1,13 @@
 import React from "react";
-import Link from "react-router-dom";
+// import Link from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+// import Jumbotron from "react-bootstrap/Jumbotron";
+// import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Media from "react-bootstrap/Media";
+// import Media from "react-bootstrap/Media";
 import Image from "react-bootstrap/Image";
-import Modal from "react-bootstrap/Modal";
+// import Modal from "react-bootstrap/Modal";
 
 export default class Projects extends React.Component {
   render() {
@@ -19,7 +19,7 @@ export default class Projects extends React.Component {
         </h1>
         <p className="about">
           I've recently undergone working collaboritvely on open source projects
-          like <a href="">CoronaTracker</a>
+          like <a href="https://coronatrackerbeta.com/">CoronaTracker</a>
         </p>
 
         <Row align="center">
