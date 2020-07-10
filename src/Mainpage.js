@@ -133,14 +133,14 @@ export default class Main extends React.Component {
                   <Col>
                     <h1 className="about-h1">About me ---></h1>
                     <p className="about">
-                      Trinity University graduate student with a background in
-                      physics and mathematics. I currently live in Austin, Texas
-                      and am in the process of a job search. I have many hobbies
-                      which include photography, playing piano/guitar and
-                      playing video games. I love learning and pursing knowledge
-                      I find interesting. This website was designed to look
-                      empty and barren as I wish to add more and more to it over
-                      time. The sky might be the limit, however, space is
+                      I graduated from Trinity University with a B.S. in physics
+                      and a minor in mathematics. I currently live in Austin,
+                      Texas and am in the process of a job search. I have many
+                      hobbies which include photography, playing piano/guitar
+                      and playing video games. I love learning and pursing
+                      knowledge I find interesting. This website was designed to
+                      look empty and barren as I wish to add more and more to it
+                      over time. The sky might be the limit, however, space is
                       limitless. Using ReactJS and BootStrap-ReactJS and
                       implementing SCSS to create the background. Mobile view is
                       atrocious, currently working on improving it.

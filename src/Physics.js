@@ -13,7 +13,7 @@ function Physics() {
   const c = "\\frac{\\sin(n \\theta)}{n \\pi}";
   const series =
     "s_N(x) = \\frac{a_O}{2} + \\sum_{n=1}^{N}(a_n\\cos(2\\pi x \\frac{n}{P}) + b_n\\sin(2\\pi x \\frac{n}{P}))";
-  const perturbation = "\\sum_{n=0}^{N} a_n\\epsilon^n";
+  const perturbation = "x_n = \\sum_{n=0}^{N} a_n\\epsilon^n";
   return (
     <Container>
       <Row align="center" className="physics-heading">
