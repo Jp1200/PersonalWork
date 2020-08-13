@@ -102,7 +102,11 @@ export default class Main extends React.Component {
           show={this.state.show}
           onHide={this.handleClose}
         >
-          <Image width={805} height={1025} src={require("./resume.png")} />
+          <Image
+            width={805}
+            height={1025}
+            src={require("./Resource/Jack_Parker_Resume_2020_prime copy.png")}
+          />
         </Modal>
 
         <Row>
