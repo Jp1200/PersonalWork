@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import MathJax from "react-mathjax";
+
 function Physics() {
   const fourierA =
     "a_n = \\frac{2}{P}\\int_P s(x)\\cdot \\cos(2\\pi x \\frac{n}{P}) dx";

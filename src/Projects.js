@@ -23,9 +23,11 @@ export default class Projects extends React.Component {
         </p>
 
         <Row align="center">
-          <Col className="col-xs-6">
+          <Col className="col-xs-4">
             <a href="https://neighborhood-farmer-market.herokuapp.com/">
               <Image
+                height="400px"
+                width="400px"
                 align="center"
                 className="imageX"
                 src={require("./Resource/HomeGrown.png")}
@@ -37,9 +39,12 @@ export default class Projects extends React.Component {
               HomeGrown Foods, App for neighbors to trade produce. Heroku Server
               host is slow(refreshing and clicking again will fix it)
             </p>
-
+          </Col>
+          <Col className="col-xs-4">
             <a href="https://github.com/Jp1200/kareoji">
               <Image
+                height="400px"
+                width="400px"
                 align="center"
                 className="imageX"
                 src={require("./Resource/kareoji.png")}
@@ -48,9 +53,12 @@ export default class Projects extends React.Component {
             </a>
 
             <p className="about">Kareoji, karaoke but with emojis</p>
-
+          </Col>
+          <Col className="col-xs-4">
             <a href="https://github.com/Jp1200/Jp1200-ShowsInZip">
               <Image
+                height="400px"
+                width="400px"
                 align="center"
                 className="imageX"
                 src={require("./Resource/VroFi.png")}

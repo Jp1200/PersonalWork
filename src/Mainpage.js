@@ -63,12 +63,6 @@ export default class Main extends React.Component {
           </Col>
 
           <Col className="col-xs-6 ">
-            {/* <Breadcrumb>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>Projects</Breadcrumb.Item>
-                <Breadcrumb.Item>Photography</Breadcrumb.Item>
-                <Breadcrumb.Item>Physics</Breadcrumb.Item>
-              </Breadcrumb> */}
             <ButtonGroup aria-label="Links" size="lg">
               <Button className="button-header" variant="outline-light">
                 <Link className="link" to="/">
