@@ -35,13 +35,6 @@ export default class Main extends React.Component {
   render() {
     return (
       <Container fluid className="mainpage">
-        {/* <Jumbotron>
-          <h1 className='header'>Full-Stack Web Developer, Physicist, Photographer and Musician</h1>
-
-
-        </Jumbotron> */}
-        {/* {particles} */}
-
         <Row className="row">
           <Col className="col-xs-6">
             <h3 className="header text-center">
@@ -61,7 +54,7 @@ export default class Main extends React.Component {
               />
             </h3>
           </Col>
-
+          {/* Button Links to other pages */}
           <Col className="col-xs-6 ">
             <ButtonGroup aria-label="Links" size="lg">
               <Button className="button-header" variant="outline-light">
@@ -99,7 +92,7 @@ export default class Main extends React.Component {
           <Image
             width={805}
             height={1025}
-            src={require("./Resource/Jack_Parker_Resume_2020_prime copy.png")}
+            src={require("./Resource/jack_parker_resume_2020.png")}
           />
         </Modal>
 
@@ -132,16 +125,15 @@ export default class Main extends React.Component {
                     <h1 className="about-h1">About me ---></h1>
                     <p className="about">
                       I graduated from Trinity University with a B.S. in physics
-                      and a minor in mathematics. I currently live in Austin,
-                      Texas and am in the process of a job search. I have many
-                      hobbies which include photography, playing piano/guitar
-                      and playing video games. I love learning and pursing
-                      knowledge I find interesting. This website was designed to
-                      look empty and barren as I wish to add more and more to it
-                      over time. The sky might be the limit, however, space is
-                      limitless. Using ReactJS and BootStrap-ReactJS and
-                      implementing SCSS to create the background. Mobile view is
-                      atrocious, currently working on improving it.
+                      and a minor in mathematics. I have many hobbies which
+                      include photography, playing piano and guitar. I love
+                      learning and pursing knowledge I find interesting. This
+                      website was designed to look empty and barren as I wish to
+                      add more and more to it over time. The sky might be the
+                      limit, however, space is limitless. Using ReactJS and
+                      BootStrap-ReactJS and implementing SCSS to create the
+                      background. Mobile view is atrocious, currently working on
+                      improving it.
                     </p>
                   </Col>
                 </Row>

@@ -19,6 +19,36 @@ function Physics() {
     <Container>
       <Row align="center" className="physics-heading">
         <Col className="col-md-6">
+          <h5>
+            Phemonology, regarding the Physical and Absolutes of Consciousness
+          </h5>
+          <p className="physics-text">
+            Recently, Elon Musk's company NeuraLink showcased their V0.9
+            NeuraLink device. A static device inserted into the cranium via hole
+            surgically removed by precise robotic surgeon. The device, of the
+            size of a thumb nail, would attach 1024 electrodes into the outer
+            layer of the cortex of the brain. There are 1024 channels to
+            transmit and upload data directly to the brain. Neurons in the brain
+            are simple electrical signals, like an intereconnected web of
+            consciousness. The promises of such a device are unheard of:
+          </p>
+        </Col>
+        <Col className="col-md-6">
+          {"\n"}
+          1. A cure for blindness
+          {"\n"}
+          2. Restore hearing
+          {"\n"}
+          3. Restore paralyized limbs
+          {"\n"}
+          Contingencies with the emergent technology is firstly of safety,
+          health, interconnectivenss with man-made technology. What sort of
+          issues does combining the consciousness with technology, such as
+          phones and API's, result in?
+        </Col>
+      </Row>
+      <Row align="center" className="physics-heading">
+        <Col className="col-md-6">
           <h5>Fourier series</h5>
           <h5 className="math">
             <MathJax.Provider>
