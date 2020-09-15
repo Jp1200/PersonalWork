@@ -83,11 +83,37 @@ export default class Projects extends React.Component {
               <Row>
                 <Col className="responsive-breakpoint">
                   <ListGroup className="list">
-                    <ListGroup.Item className="list-item" eventKey="#link1">
+                    <ListGroup.Item
+                      action
+                      variant="No Style"
+                      className="list-item"
+                      eventKey="#link1"
+                    >
                       Neural Network with Python3
                     </ListGroup.Item>
-                    <ListGroup.Item className="list-item" eventKey="#link2">
+                    <ListGroup.Item
+                      action
+                      variant="No Style"
+                      className="list-item"
+                      eventKey="#link2"
+                    >
                       Frontend vanilla CSS/HTML examples
+                    </ListGroup.Item>
+                    <ListGroup.Item
+                      action
+                      variant="No Style"
+                      className="list-item"
+                      eventKey="#link3"
+                    >
+                      Algorithms
+                    </ListGroup.Item>
+                    <ListGroup.Item
+                      action
+                      variant="No Style"
+                      className="list-item"
+                      eventKey="#link4"
+                    >
+                      CycleTron Advanced
                     </ListGroup.Item>
                   </ListGroup>
                 </Col>
@@ -95,7 +121,8 @@ export default class Projects extends React.Component {
                   <Tab.Content>
                     <Tab.Pane eventKey="#link1">
                       <p className="physics-text">
-                        Neural Network basics in Python{" "}
+                        Neural Network basics in Python. Working on implementing
+                        stock analysis{" "}
                         <a href="https://github.com/Jp1200/PythonNetworks">
                           here.
                         </a>
@@ -106,6 +133,24 @@ export default class Projects extends React.Component {
                         A Github repo where I work on basic CSS/HTML for
                         frontend work{" "}
                         <a href="https://github.com/Jp1200/frontend">here.</a>
+                      </p>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="#link3">
+                      <p className="physics-text">
+                        AlgoExpert solutions to algorithm problems in Python3{" "}
+                        <a href="https://github.com/Jp1200/AlgoSolutions">
+                          here.
+                        </a>
+                      </p>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="#link4">
+                      <p className="physics-text">
+                        Working on creating a multiplayer game in browser
+                        through websockets to re-create an old game I played as
+                        a kid{" "}
+                        <a href="https://github.com/Jp1200/CycleTronAdvanced">
+                          here.
+                        </a>
                       </p>
                     </Tab.Pane>
                   </Tab.Content>

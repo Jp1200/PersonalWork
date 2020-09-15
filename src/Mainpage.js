@@ -74,7 +74,7 @@ export default class Main extends React.Component {
               </Button>
               <Button className="button-header" variant="outline-light">
                 <Link className="link" to="/physics">
-                  Physics
+                  Blog
                 </Link>
               </Button>
             </ButtonGroup>

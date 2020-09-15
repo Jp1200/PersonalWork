@@ -241,9 +241,12 @@ body::-webkit-scrollbar {
   background-color: #000000;
   margin: 15px;
   padding: 10px;
+  overflow: scroll;
+  height: 200px;
 }
 .list:hover {
   cursor: pointer;
+  border-color: #fff;
 }
 .list-item {
   color: #fff;

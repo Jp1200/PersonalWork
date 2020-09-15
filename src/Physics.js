@@ -25,12 +25,12 @@ function Physics() {
           <p className="physics-text">
             Recently, Elon Musk's company NeuraLink showcased their V0.9
             NeuraLink device. A static device inserted into the cranium via hole
-            surgically removed by precise robotic surgeon. The device, of the
-            size of a thumb nail, would attach 1024 electrodes into the outer
-            layer of the cortex of the brain. There are 1024 channels to
-            transmit and upload data directly to the brain. Neurons in the brain
-            are simple electrical signals, like an intereconnected web of
-            consciousness. The promises of such a device are unheard of:
+            surgically removed by precise robotic surgeon. The device, the size
+            of a thumb nail, would attach 1024 electrodes into the outer layer
+            of the cortex of the brain. There are 1024 channels to transmit and
+            upload data directly to the brain. Neurons in the brain are simple
+            electrical signals, like an intereconnected web of consciousness.
+            The promises of such a device are unheard of:
           </p>
         </Col>
         <Col className="col-md-6 ">
