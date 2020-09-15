@@ -16,9 +16,9 @@ function Physics() {
     "s_N(x) = \\frac{a_O}{2} + \\sum_{n=1}^{N}(a_n\\cos(2\\pi x \\frac{n}{P}) + b_n\\sin(2\\pi x \\frac{n}{P}))";
   const perturbation = "x_n = \\sum_{n=0}^{N} a_n\\epsilon^n";
   return (
-    <Container>
-      <Row align="center" className="physics-heading">
-        <Col className="col-md-6">
+    <Container className="physics-row">
+      <Row align="center" className="physics-heading ">
+        <Col className="col-md-6 ">
           <h5>
             Phemonology, regarding the Physical and Absolutes of Consciousness
           </h5>
@@ -33,21 +33,18 @@ function Physics() {
             consciousness. The promises of such a device are unheard of:
           </p>
         </Col>
-        <Col className="col-md-6">
-          {"\n"}
-          1. A cure for blindness
-          {"\n"}
-          2. Restore hearing
-          {"\n"}
-          3. Restore paralyized limbs
-          {"\n"}
-          Contingencies with the emergent technology is firstly of safety,
-          health, interconnectivenss with man-made technology. What sort of
-          issues does combining the consciousness with technology, such as
-          phones and API's, result in?
+        <Col className="col-md-6 ">
+          <p className="physics-text">
+            1. A cure for blindness 2. Restore hearing 3. Restore paralyized
+            limbs Contingencies with the emergent technology is firstly of
+            safety, health, and the conflicts that might arise from
+            interconnectivenss with man-made technology. What sort of issues
+            does combining the consciousness with technology, such as phones and
+            API's, result in?
+          </p>
         </Col>
       </Row>
-      <Row align="center" className="physics-heading">
+      <Row align="center" className="physics-heading ">
         <Col className="col-md-6">
           <h5>Fourier series</h5>
           <h5 className="math">
@@ -84,7 +81,7 @@ function Physics() {
         </Col>
       </Row>
 
-      <Row align="center">
+      <Row align="center" className="">
         <Col>
           <Fourier />
         </Col>
@@ -96,7 +93,7 @@ function Physics() {
           </p>
         </Col>
       </Row>
-      <Row align="center">
+      <Row align="center" className="">
         <Col className="col-md-6">
           <p className="physics-text">
             Appendices: Part A - Scientiﬁc Concepts (excerpt 1) A particle, such
@@ -114,7 +111,7 @@ function Physics() {
           <Image src={require("./Resource/wave.gif")} thumbnail />
         </Col>
       </Row>
-      <Row align="center">
+      <Row align="center" className="">
         <Col className="col-md-6">
           <p className="physics-text">
             {" "}
@@ -145,7 +142,7 @@ function Physics() {
           </p>
         </Col>
       </Row>
-      <Row align="center">
+      <Row align="center" className="">
         <h1 className="physics-heading">
           Perturbation Theory and Applications
         </h1>

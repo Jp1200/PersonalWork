@@ -5,7 +5,18 @@ $time-1: 60s;
 $time-2: 120s;
 $time-3: 180s;
 $time-4: 200s;
+@media (max-width: 479px) {
+  body {
+    font-size: 13px;
+  }
 
+  .button-header {
+    display: none;
+  }
+  .buttonTitle {
+    display: none;
+  }
+}
 /* mixins */
 @function particles($max) {
   $val: 0px 0px $color-particle;
@@ -122,6 +133,9 @@ body {
   color: #fff;
 }
 .about-h1 {
+  border-radius: 25;
+  border-color: #fff;
+
   color: #ffffff;
   align-self: flex-start;
 }
@@ -140,13 +154,7 @@ body {
   transform: scale(1.01);
   background-color: white;
 }
-// h4 {
-//   color: #fff;
-//   font-family: Monoton;
-//   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-//   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-//   animation: neon1 1.5s ease-in-out infinite alternate;
-// }
+
 .mainpage {
   justify-content: center;
   overflow: auto;
@@ -179,8 +187,21 @@ body::-webkit-scrollbar {
 .resume-modal {
   color: #ffffff;
 }
-.math {
+.projects-col {
+  background-color: #000000;
+  background: linear-gradient(#272727, #000000);
+  margin: 50px;
+  padding: 10;
 }
+.physics-row {
+  background-color: #000000;
+  background: linear-gradient(#272727, #000000);
+}
+.projects-text {
+  color: #fff;
+  font-size: 14;
+}
+
 .icons {
   margin: 3px;
 }
@@ -214,12 +235,28 @@ body::-webkit-scrollbar {
   margin: 40px;
   justify-content: center;
 }
+.list {
+  font-size: 12pt;
+  color: #fff;
+  background-color: #000000;
+  margin: 15px;
+  padding: 10px;
+}
+.list:hover {
+  cursor: pointer;
+}
+.list-item {
+  color: #fff;
+  background: #000;
+  font-size: 12pt;
+}
 .physics-heading {
   text-align: center;
   align-items: center;
   font-family: monospace;
   color: #ffffff;
   padding: 20px;
+  font-weight: 700;
 }
 .physics-text {
   font-size: 14pt;

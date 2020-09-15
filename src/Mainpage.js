@@ -36,7 +36,7 @@ export default class Main extends React.Component {
     return (
       <Container fluid className="mainpage">
         <Row className="row">
-          <Col className="col-xs-6">
+          <Col className="link-to">
             <h3 className="header text-center">
               Jack Parker
               <SocialIcon
@@ -55,7 +55,7 @@ export default class Main extends React.Component {
             </h3>
           </Col>
           {/* Button Links to other pages */}
-          <Col className="col-xs-6 ">
+          <Col className="buttonTitle">
             <ButtonGroup aria-label="Links" size="lg">
               <Button className="button-header" variant="outline-light">
                 <Link className="link" to="/">
@@ -90,9 +90,8 @@ export default class Main extends React.Component {
           onHide={this.handleClose}
         >
           <Image
-            width={805}
-            height={1025}
-            src={require("./Resource/jack_parker_resume_2020.png")}
+            className="img-fluid"
+            src={require("./Resource/resume_jp.png")}
           />
         </Modal>
 
@@ -114,14 +113,14 @@ export default class Main extends React.Component {
                   <Media className="media">
                     <Image
                       onClick={this.handleShow}
-                      src={require("./resume.png")}
+                      src={require("./Resource/resume_jp.png")}
                       width={805 / 4}
                       height={1025 / 4}
                     />
                   </Media>
                 </Row>
                 <Row>
-                  <Col>
+                  <Col className="projects-col">
                     <h1 className="about-h1">About me ---></h1>
                     <p className="about">
                       I graduated from Trinity University with a B.S. in physics
