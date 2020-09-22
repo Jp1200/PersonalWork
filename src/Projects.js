@@ -42,18 +42,20 @@ export default class Projects extends React.Component {
             </p>
           </Col>
           <Col className="col-xs-4">
-            <a href="https://github.com/Jp1200/kareoji">
+            <a href="https://jp1200.github.io/tweet-checker/">
               <Image
                 height="400px"
                 width="400px"
                 align="center"
                 className="imageX"
-                src={require("./Resource/kareoji.png")}
+                src={require("./Resource/tweeter.png")}
                 thumbnail
               ></Image>
             </a>
 
-            <p className="about">Kareoji, karaoke but with emojis</p>
+            <p className="about">
+              An App to validate the credibility of Tweets
+            </p>
           </Col>
           <Col className="col-xs-4">
             <a href="https://github.com/Jp1200/Jp1200-ShowsInZip">
